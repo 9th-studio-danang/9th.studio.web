@@ -2,7 +2,6 @@
 <html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US">
 	<head>
         <link rel="stylesheet" href="styles.css">
-		<link rel="stylesheet" href="sqs_styles.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="initial-scale=1">
 		<base href="">
@@ -22,26 +21,31 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="script.js"></script>
     </head>
 
     <body>
         <div class="scroll-down"></div>
-        <div>
-            <header class="topnav">
-                <div href="#home">Logo</div>
-
-                <div id="menu">
-                  <a href="#news">About</a>
-                  <a href="#contact">Artists</a>
-                  <a href="#about">Contact</a>
-                </div>
-
-                <a href="javascript:void(0);" class="icon" onclick="menuClicked()">
-                  <i class="fa fa-bars"></i>
-                </a>
-            </header>
+        <div id="nav-logo">
+            <h1 class="bigger-text">9th.studio</h1>
+        </div>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header"></div>
+            <div class="nav-btn no-flash">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div id="navlinks-container" class="nav-links">
+                <a href="#about">About</a>
+                <a href="#artists-section">Artists</a>
+                <a href="#shop-info-section">Contact</a>
+            </div>
         </div>
 
         <section id="tattoos-show">
@@ -52,9 +56,12 @@
         </section>
 
         <section id="about">
-            <div>
-                9th Studio is a tattoo shop in Da Nang, Vietnam.
-            </div>
+            <h1 class="center glitched">
+                9th.studio is proud to be one of the best tattoo shops in Da Nang, Vietnam.
+            </h1>
+            <button id="see-artworks" class="text">
+                Check out all artworks
+            </button>
         </section>
 
         <section id="shop-video">
@@ -71,7 +78,7 @@
                     <p class="bigger-text center" style="font-size: 38px; margin:20px 15px 0px 15px;">
                         Artist A
                     </p>
-                    <p class="text artist-description">
+                    <p class="artist-description">
                         Specializes in bold, solid work rooted in the time-honored traditions of classic American and Japanese tattooing. 
                     </p>
                 </div>
@@ -80,7 +87,7 @@
                     <p class="bigger-text center" style="font-size: 38px; margin:20px 15px 0px 15px;">
                         Artist B
                     </p>
-                    <p class="text artist-description">
+                    <p class="artist-description">
                         His work is defined by bright colors, clean lines, and a design aesthetic inspired by traditional American tattoos, comics, and psychedelia from the 1960s and ‘70s.
                     </p>
                 </div>
@@ -89,7 +96,7 @@
                     <p class="bigger-text center" style="font-size: 38px; margin:20px 15px 0px 15px;">
                         Artist C
                     </p>
-                    <p class="text artist-description">
+                    <p class="artist-description">
                         very short text.
                     </p>
                 </div>
@@ -119,6 +126,10 @@
                     Email: email123@gmail.com
                     <br/>
                     Phone: 999-999-9999
+                    <br/>
+                    Instagram: abcxyz
+                    <br/>
+                    Facebook: abcxyz
                 </p>
             </div>
 
@@ -145,8 +156,19 @@
         </section>
     </body>
 
-    <footer class="center">
-        <img src="">
-
+    <footer>
+        <div class="bigger-text center" style="color: white;">9th.studio</div>
+        <div id="footer-social" class="center">
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                    <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#007ad9"></stop></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path><path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"></path>
+                </svg>
+            </a>
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                    <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+                </svg>
+            </a>
+        </div>
     </footer>
 </html>

@@ -1,16 +1,5 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function menuClicked() {
-    var x = document.getElementById("menu");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-
 window.addEventListener('load', videoScroll);
 window.addEventListener('scroll', videoScroll);
-
 /** 
  * Function to play video when user scrolls to it, and stop the video
  * when the user scrolls out.
