@@ -1,3 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    -webkit-user-drag: none; /* For Safari and Chrome */
+    -khtml-user-drag: none;  /* For Konqueror */
+    -moz-user-drag: none;    /* For Firefox */
+    -o-user-drag: none;      /* For Opera */
+}
+
+/* CSS for generic usage */
+
+.text {
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+}
+
+.bigger-text {
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.sub-shop-info-section {
+    margin-bottom: 30px;
+}
+
+/* CSS for the header */
+
+.topnav {
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+  
+.topnav #menu {
+    display: none;
+}
+
+.topnav a {
+    float: right;
+    color: grey;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+ 
+.topnav a.icon {
+    float: right;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* CSS for the tattoos show section */
+
+#tattoos-show {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+}
+
+#tattoos-show video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* CSS for the arrow pointing down in the tattoos show section */
+
 .scroll-down {
     position: absolute;
     left: 70%;
@@ -15,11 +108,143 @@
     z-index: 9;
     left: 50%;
     transform: translate(-50%, 0%) rotate(45deg);
-    animation: fade_move_down 4s ease-in-out infinite;
+    animation: fade_move_down 2s ease-in-out infinite;
 }
-
 @keyframes fade_move_down {
     0% { transform:translate(0,-10px) rotate(45deg); opacity: 0; }
     50% { opacity: 1; }
     100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+/* CSS for the shop intro text section */
+
+#about {
+    height: 350px;
+}
+
+/* CSS for the shop video */
+
+#shop-video {
+    height: 80vh;
+    width: 100%;
+}
+
+#shop-video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* CSS for the artists section */
+
+#artists-section {
+    padding: 50px;
+}
+
+#artists-container {
+    height: fit-content;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 500px));
+    grid-gap: 1rem;
+}
+
+.artist-frame {
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: lightgray;
+    transition: 0.3s;
+    margin: 30px 20px 0px 20px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+}
+.artist-frame:hover {
+    transform: scale(1.07, 1.07);
+    cursor: pointer;
+}
+
+.artist-photo {
+    width: 100%;
+    height: 330px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
+}
+
+.artist-description {
+    height: auto;
+    text-align: left;
+    font-size: 18px;  
+    margin: 10px 20px 0px 20px;
+    padding: 0px 10px 20px 10px;
+}
+
+/* CSS for the shop info section */
+
+#shop-info-section {
+    padding: 40px 15vw 40px 15vw;
+}
+
+/* CSS for the tattoo quote */
+
+#quote-section {
+    padding: 40px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 250px;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+#quote-section:after{
+    content: "";
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.12) 60%, rgb(0, 0, 0) 100%);
+}
+#quote-section:before {
+    content:"";
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+    transform: translateZ(0);
+    background: #000000 url("resources/quote-background.jpg") 100% 0 no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    animation: grow 150s linear 1ms infinite;
+    transition: all 0.5s ease-in-out;
+    z-index: -2
+}
+@keyframes grow {
+    0% { transform: scale(1) translateY(0px)}
+    50% { transform: scale(1.3) translateY(-200px)}
+}
+
+#quote {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    top: 50%;
+}
+
+#quote-author {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: black;
+    height: 400px;
 }
