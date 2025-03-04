@@ -36,13 +36,18 @@ button:hover {
 }
 
 .text {
-    font-family: 'Teko', sans-serif;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     font-size: 30px;
 }
 
 .bigger-text {
-    font-family: 'Teko', sans-serif;
-    font-weight: bold;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     font-size: 45px;
     margin-bottom: 10px;
 }
@@ -89,6 +94,24 @@ button:hover {
     color: white;
     z-index: 1000;
     top: -23px;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+#changeLanguageBtn {
+    position:fixed;
+    right: 570px;
+    top: 20px;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding: 10px;
 }
 
 .nav {
@@ -119,8 +142,12 @@ button:hover {
 .nav > .nav-links {
     display: inline;
     float: right;
-    font-family: 'Teko', sans-serif;
-    font-size: 32px;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    margin-top: 10px;
     padding-right: 30px;
 }
 
@@ -135,7 +162,21 @@ button:hover {
     display: none;
 }
 
+#navlinks-container a{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 125px;
+}
+
 @media (max-width: 600px) {
+    #nav-logo {
+        font-size: 17px;
+        margin-top: 15px;
+    }
+
+    #changeLanguageBtn {
+        right: 75px;
+    }
     .nav > .nav-btn {
         display: inline-block;
         position: absolute;
@@ -236,8 +277,12 @@ button:hover {
 }
 
 #about h1 {
-    font-size: 55px;
-    font-family: 'Teko', sans-serif;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    margin-top: 50px;
     animation: glitch 1s linear infinite;
 }
 
@@ -299,7 +344,7 @@ button:hover {
 #see-artworks {
     width: 300px;
     height: 60px;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 @media (max-width: 1000px) {
