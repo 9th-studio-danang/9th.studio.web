@@ -208,7 +208,7 @@ button:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 910px) {
     #nav-logo {
         font-size: 13px;
         margin-top: 25px;
@@ -313,10 +313,121 @@ button:hover {
 /* CSS for the shop intro text section */
 
 #about {
-    height: 350px;
+    height: auto;
     text-align: center;
     padding: 20px;
+    overflow: hidden; /* Prevent content from overflowing */
 }
+
+@media (max-width: 480px) {
+    #about {
+        padding: 15px 10px;
+    }
+}
+
+/*Carousel Gallery*/
+.carousel-gallery {
+	margin: 30px 0;
+	padding: 0 30px;
+	max-width: 100%;
+	box-sizing: border-box;
+	overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Add styles for the swiper container */
+.carousel-gallery .swiper-container {
+	width: 100%;
+	overflow: hidden;
+}
+.carousel-gallery .swiper-slide a {
+	display: block;
+	width: 100%;
+	height: 200px;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	-webkit-box-shadow: 3px 2px 20px 0px rgba(0,0,0, .2);
+	-moz-box-shadow: 3px 2px 20px 0px rgba(0,0,0, .2);
+	box-shadow: 3px 2px 20px 0px rgba(0,0,0, .2);
+}
+
+/* Responsive styles for carousel gallery */
+@media (max-width: 768px) {
+	.carousel-gallery {
+		padding: 0 20px;
+	}
+	.carousel-gallery .swiper-slide a {
+		height: 180px;
+	}
+}
+
+@media (max-width: 480px) {
+	.carousel-gallery {
+		padding: 0 15px;
+		margin: 20px 0;
+	}
+	.carousel-gallery .swiper-slide a {
+		height: 150px;
+	}
+}
+
+@media (max-width: 320px) {
+	.carousel-gallery {
+		padding: 0 10px;
+	}
+	.carousel-gallery .swiper-slide a {
+		height: 120px;
+	}
+}
+.carousel-gallery .swiper-slide a:hover .image .overlay {
+    opacity: 1;
+}
+.carousel-gallery .swiper-slide a .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-gallery .swiper-slide a .image .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20,20,20, .8);
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.carousel-gallery .swiper-slide a .image .overlay em {
+    color: #fff;
+    font-size: 26px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+}
+.carousel-gallery .swiper-pagination {
+    position: relative;
+    bottom: auto;
+    text-align: center;
+    margin-top: 25px;
+}
+.carousel-gallery .swiper-pagination .swiper-pagination-bullet {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.carousel-gallery .swiper-pagination .swiper-pagination-bullet:hover {
+    opacity: .7;
+}
+.carousel-gallery .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #d63031;
+    transform: scale(1.1, 1.1)
+}
+/*# Carousel Gallery*/
 
 #about h1 {
     font-family: "Unbounded", sans-serif;
@@ -386,6 +497,12 @@ button:hover {
 #see-artworks {
     font-size: 18px;
     padding: 12px 24px 12px 24px;
+}
+
+@media (max-width: 480px) {
+    #see-artworks {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1000px) {
