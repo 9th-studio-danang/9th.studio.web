@@ -48,8 +48,26 @@ button:hover {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 45px;
+    font-size: 30px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .bigger-text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .bigger-text {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 350px) {
+    .bigger-text {
+        font-size: 17px;
+    }
 }
 
 .center {
@@ -86,6 +104,14 @@ button:hover {
     background-color: white!important;
 }
 
+.unselectable {
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-user-drag: none;
+}
+
 /* CSS for the navigation bar */
 
 #nav-logo {
@@ -105,13 +131,12 @@ button:hover {
 #changeLanguageBtn {
     position:fixed;
     right: 570px;
-    top: 20px;
+    top: 27px;
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: white;
-    padding: 10px;
 }
 
 .nav {
@@ -146,9 +171,10 @@ button:hover {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10px;
     padding-right: 30px;
+    text-align: center;
 }
 
 .nav > .nav-links > a {
@@ -168,14 +194,28 @@ button:hover {
     width: 125px;
 }
 
+@media (max-width: 1150px) {
+    .nav > .nav-links {
+        font-size: 15px;
+        padding-right: 0;
+        margin-top: 16px;
+    }
+    #changeLanguageBtn {
+        right: 460px;
+    }
+    #navlinks-container a {
+        width: 100px;
+    }
+}
+
 @media (max-width: 600px) {
     #nav-logo {
-        font-size: 17px;
-        margin-top: 15px;
+        font-size: 13px;
+        margin-top: 25px;
     }
 
     #changeLanguageBtn {
-        right: 75px;
+        right: 80px;
     }
     .nav > .nav-btn {
         display: inline-block;
@@ -207,6 +247,7 @@ button:hover {
         transition: all 0.4s ease-in;
         overflow-y: hidden;
         top: var(--navbar-height);
+        margin-top: 0px;
         left: 0px;
     }
     .nav > .nav-links > a {
@@ -217,7 +258,8 @@ button:hover {
         height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-        height: 250px;
+        height: 150px;
+        padding-bottom: 20px;
         overflow-y: auto;
     }
     .nav > .nav-links > a:checked {
@@ -280,7 +322,7 @@ button:hover {
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
     font-style: normal;
     margin-top: 50px;
     animation: glitch 1s linear infinite;
@@ -342,26 +384,34 @@ button:hover {
 }
 
 #see-artworks {
-    width: 300px;
-    height: 60px;
     font-size: 18px;
+    padding: 12px 24px 12px 24px;
 }
 
 @media (max-width: 1000px) {
     #about h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
 @media (max-width: 700px) {
     #about h1 {
-        font-size: 35px;
+        font-size: 26px;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
     #about h1 {
-        font-size: 33px;
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 370px) {
+    #about h1 {
+        font-size: 18px;
+    }
+    #see-artworks {
+        font-size: 15px;
     }
 }
 
@@ -370,6 +420,7 @@ button:hover {
 #shop-video {
     height: 80vh;
     width: 100%;
+    background-color: black;
 }
 
 #shop-video video {
@@ -403,7 +454,6 @@ button:hover {
 }
 .artist-frame:hover {
     transform: scale(1.07, 1.07);
-    cursor: pointer;
 }
 
 .artist-photo {
@@ -413,12 +463,35 @@ button:hover {
     object-fit: cover;
 }
 
+.artist-name {
+    font-size: 25px;
+    margin:20px 15px 0px 15px;
+}
+
+.artist-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.artist-socials a:hover {
+    cursor: pointer;
+}
+
 .artist-description {
     height: auto;
     text-align: left;
     font-size: 15px;  
     margin: 10px 20px 0px 20px;
     padding: 0px 10px 20px 10px;
+}
+
+@media (max-width: 700px) {
+    .artist-name {
+        font-size: 20px;
+    }
 }
 
 /* CSS for the shop info section */

@@ -52,7 +52,6 @@ function changeLanguage() {
     pText.innerHTML = "100 ngàn cho 1 giờ";
     sloganText.innerHTML = "9th.studio một trong những tattoo shops đỉnh nhất đất Đà Thành.";
   }
-  
   else {
     aboutText.innerHTML = "About";
     apptHeaderText.innerHTML = "Appointments";
