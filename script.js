@@ -82,7 +82,7 @@ function changeLanguage() {
       aboutText: "Giới thiệu",
       apptHeaderText: "Đặt lịch",
       apptText: "Liên hệ trực tiếp để đặt lịch hẹn.",
-      artWorksBtnTxt: "Xem Thêm",
+      artWorksBtnTxt: "Xem toàn bộ hình xăm",
       navContactText: "Liên hệ",
       contactText: "Liên hệ",
       locationText: "Địa chỉ",
@@ -90,7 +90,7 @@ function changeLanguage() {
       timeText: "Hằng ngày: 10 giờ sáng - 7 giờ tối",
       priceHeaderTxt: "Bảng giá",
       pText: "100 ngàn cho 1 giờ",
-      sloganText: "9th.studio một trong những tattoo shops đỉnh nhất đất Đà Thành."
+      sloganText: "9th.studio một trong những tattoo shops đỉnh nhất Đà Thành."
     },
     Eng: {
       aboutText: "About",

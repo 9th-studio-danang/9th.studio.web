@@ -497,13 +497,10 @@ button:hover {
 #see-artworks {
     font-size: 18px;
     padding: 12px 24px 12px 24px;
-    max-width: 90%;
 }
 
 @media (max-width: 480px) {
     #see-artworks {
-        width: 250px;
-        height: 50px;
         font-size: 16px;
     }
 }
