@@ -168,7 +168,7 @@ button:hover {
     width: 125px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 910px) {
     #nav-logo {
         font-size: 17px;
         margin-top: 15px;
