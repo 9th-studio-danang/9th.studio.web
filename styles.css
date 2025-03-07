@@ -342,7 +342,7 @@ button:hover {
 .carousel-gallery .swiper-slide a {
 	display: block;
 	width: 100%;
-	height: 200px;
+	height: 500px;
 	border-radius: 4px;
 	overflow: hidden;
 	position: relative;
@@ -356,9 +356,6 @@ button:hover {
 	.carousel-gallery {
 		padding: 0 20px;
 	}
-	.carousel-gallery .swiper-slide a {
-		height: 180px;
-	}
 }
 
 @media (max-width: 480px) {
@@ -366,19 +363,26 @@ button:hover {
 		padding: 0 15px;
 		margin: 20px 0;
 	}
-	.carousel-gallery .swiper-slide a {
-		height: 150px;
-	}
 }
 
 @media (max-width: 320px) {
 	.carousel-gallery {
 		padding: 0 10px;
 	}
-	.carousel-gallery .swiper-slide a {
-		height: 120px;
-	}
 }
+
+@media (max-width: 900px) {
+    .carousel-gallery .swiper-slide a {
+        height: 450px;
+    }
+}
+
+@media (max-width: 700px) {
+    .carousel-gallery .swiper-slide a {
+        height: 400px;
+    }
+}
+
 .carousel-gallery .swiper-slide a:hover .image .overlay {
     opacity: 1;
 }
