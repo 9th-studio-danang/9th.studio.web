@@ -807,7 +807,7 @@ button:hover {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0); backface-visibility: hidden;
     transform: translateZ(0);
-    background: #000000 url("resources/quote-background.jpg") 100% 0 no-repeat;
+    background: #000000 url("https://previews.dropbox.com/p/thumb/ACkX_uvIUCpYyHy2eLWWsU34s6eubwdBmJa1ACw3mMARth2x8MkS15nxKXYTvS1DwHdN7dLIJwp7B69NlzUw7jVpuj6lw6DUryZP6syhmFSEXqKJnQCRtjaesh_z-syD0oI28uxPJl_XkTP9EgCvdJELuK5XnnJJR4P5wCu6Xml9SlKyqkXpNNd74qd3eD_q7oLbHmdWeQCAHAT2P34mkJzOGbZX3edz32eGMsutaSXGDpw248DGyaHu4damtK9Z-wsQ1h5GNrquVE7kS2MdopQLis65x2moDSP93rbsoY6I5M8SJesDRkN6SFd0syjhnr4/p.jpeg") 100% 0 no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     animation: grow 150s linear 1ms infinite;
