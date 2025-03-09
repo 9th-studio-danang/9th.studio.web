@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -30,13 +30,14 @@ button {
     color:black;
     transition: 0.3s;
 }
+
 button:hover {
     transform: scale(1.10, 1.10);
     cursor: pointer;
 }
 
 .text {
-    font-family: "Unbounded", sans-serif;
+    font-family: Unbounded, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -44,7 +45,7 @@ button:hover {
 }
 
 .bigger-text {
-    font-family: "Unbounded", sans-serif;
+    font-family: Unbounded, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -52,19 +53,19 @@ button:hover {
     margin-bottom: 10px;
 }
 
-@media (max-width: 800px) {
+@media (width <= 800px) {
     .bigger-text {
         font-size: 25px;
     }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
     .bigger-text {
         font-size: 23px;
     }
 }
 
-@media (max-width: 350px) {
+@media (width <= 350px) {
     .bigger-text {
         font-size: 17px;
     }
@@ -79,8 +80,6 @@ button:hover {
 .vertical-align {
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -91,13 +90,10 @@ button:hover {
 .no-flash {
     /* Remove onclick Background Color Change */
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
+
 .no-flash:focus {
     /* Remove onclick Border Color Change */
     outline: none;
@@ -105,14 +101,11 @@ button:hover {
 }
 
 .unselectable {
-    user-select: none; /* Standard syntax */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
     -webkit-user-drag: none;
 }
 
-/*CSS for message button */
+/* CSS for message button */
 
 .social-chat-container {
     bottom:20px;
@@ -124,17 +117,14 @@ button:hover {
     background-color:transparent;
     border-radius:50%;
     z-index:20;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 75%);
 }
 
 .facebook-box {
     width:60%;
     height:60%;
-    background-color:#0099FF;
+    background-color:#09F;
     border-radius:50%;
-    position:absolute;
     color:white;
     text-align:center;
     line-height:62px;
@@ -183,7 +173,6 @@ button:hover {
     height: 80px;
     background: #212121;
     border-radius: 50%;
-    position: absolute;
     z-index: 21;
     color: white;
     text-align: center;
@@ -192,7 +181,7 @@ button:hover {
     position: fixed;
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
     .social-chat-container {
         bottom: 7px;
         right: 7px;
@@ -235,7 +224,7 @@ button:hover {
     color: white;
     z-index: 1000;
     top: -23px;
-    font-family: "Unbounded", sans-serif;
+    font-family: Unbounded, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -243,11 +232,11 @@ button:hover {
     margin-bottom: 10px;
 }
 
-#changeLanguageBtn {
+#change-lang-btn {
     position:fixed;
     right: 570px;
     top: 27px;
-    font-family: "Unbounded", sans-serif;
+    font-family: Unbounded, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -270,7 +259,7 @@ button:hover {
     display: inline-block;
     font-size: 22px;
     color: #fff;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
 }
   
 .nav > .nav-btn {
@@ -282,7 +271,7 @@ button:hover {
 .nav > .nav-links {
     display: inline;
     float: right;
-    font-family: "Unbounded", sans-serif;
+    font-family: Unbounded, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -294,7 +283,7 @@ button:hover {
 
 .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 13px 10px;
     text-decoration: none;
     color: #efefef;
 }
@@ -309,76 +298,85 @@ button:hover {
     width: 125px;
 }
 
-@media (max-width: 1150px) {
-
+@media (width <= 1150px) {
     .nav > .nav-links {
         font-size: 15px;
         padding-right: 0;
         margin-top: 16px;
     }
-    #changeLanguageBtn {
+
+    #change-lang-btn {
         right: 460px;
     }
+
     #navlinks-container a {
         width: 100px;
     }
 }
 
-@media (max-width: 910px) {
-
+@media (width <= 910px) {
     #nav-logo {
         font-size: 13px;
         margin-top: 25px;
     }
 
-    #changeLanguageBtn {
+    #change-lang-btn {
         right: 80px;
     }
+
     .nav > .nav-btn {
         display: inline-block;
         position: absolute;
-        right: 0px;
+        right: 0;
         top: 9px;
     }
+
     .nav > .nav-btn > label {
         display: inline-block;
         width: 50px;
         height: 50px;
         padding: 13px;
     }
+
     .nav > .nav-btn > label:hover, .nav  #nav-check:checked ~ .nav-btn > label {
         cursor: pointer;
     }
+
     .nav > .nav-btn > label > span {
         display: block;
         width: 25px;
         height: 10px;
         border-top: 2px solid #eee;
     }
+
     .nav > .nav-links {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        height: 0px;
+        background-color: rgb(0 0 0 / 80%);
+        height: 0;
         transition: all 0.4s ease-in;
         overflow-y: hidden;
         top: var(--navbar-height);
-        margin-top: 0px;
-        left: 0px;
+        margin-top: 0;
+        left: 0;
     }
+
     .nav > .nav-links > a {
         display: block;
         width: 100%;
     }
+
     .nav > #nav-check:not(:checked) ~ .nav-links {
-        height: 0px;
+        height: 0;
     }
+
     .nav > #nav-check:checked ~ .nav-links {
         height: 150px;
         padding-bottom: 20px;
         overflow-y: auto;
     }
+
     .nav > .nav-links > a:checked {
         background-color: white;
     }
@@ -404,12 +402,10 @@ button:hover {
 
 .scroll-down {
     position: absolute;
-    left: 70%;
     bottom: 30px;
     display: block;
     text-align: center;
     font-size: 100px;
-    z-index: 100;
     text-decoration: none;
     text-shadow: 0;
     width: 30px;
@@ -419,9 +415,10 @@ button:hover {
     z-index: 9;
     left: 50%;
     transform: translate(-50%, 0%) rotate(45deg);
-    animation: fade_move_down 2s ease-in-out infinite;
+    animation: fade-move-down 2s ease-in-out infinite;
 }
-@keyframes fade_move_down {
+
+@keyframes fade-move-down {
     0% { transform:translate(0,-10px) rotate(45deg); opacity: 0; }
     50% { opacity: 1; }
     100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
@@ -436,13 +433,13 @@ button:hover {
     overflow: hidden; /* Prevent content from overflowing */
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
     #about {
         padding: 15px 10px;
     }
 }
 
-/*Carousel Gallery*/
+/* Carousel Gallery */
 .carousel-gallery {
 	margin: 30px 0;
 	padding: 0 30px;
@@ -456,6 +453,7 @@ button:hover {
 	width: 100%;
 	overflow: hidden;
 }
+
 .carousel-gallery .swiper-slide a {
 	display: block;
 	width: 100%;
@@ -463,38 +461,36 @@ button:hover {
 	border-radius: 4px;
 	overflow: hidden;
 	position: relative;
-	-webkit-box-shadow: 3px 2px 20px 0px rgba(0,0,0, .2);
-	-moz-box-shadow: 3px 2px 20px 0px rgba(0,0,0, .2);
-	box-shadow: 3px 2px 20px 0px rgba(0,0,0, .2);
+	box-shadow: 3px 2px 20px 0 rgb(0 0 0 / 20%);
 }
 
 /* Responsive styles for carousel gallery */
-@media (max-width: 768px) {
+@media (width <= 768px) {
 	.carousel-gallery {
 		padding: 0 20px;
 	}
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
 	.carousel-gallery {
 		padding: 0 15px;
 		margin: 20px 0;
 	}
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
 	.carousel-gallery {
 		padding: 0 10px;
 	}
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
     .carousel-gallery .swiper-slide a {
         height: 450px;
     }
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
     .carousel-gallery .swiper-slide a {
         height: 400px;
     }
@@ -503,55 +499,56 @@ button:hover {
 .carousel-gallery .swiper-slide a:hover .image .overlay {
     opacity: 1;
 }
+
 .carousel-gallery .swiper-slide a .image {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center center;
 }
+
 .carousel-gallery .swiper-slide a .image .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(20,20,20, .8);
+    background-color: rgb(20 20 20 / 80%);
     text-align: center;
     opacity: 0;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
     transition: all .2s linear;
 }
+
 .carousel-gallery .swiper-slide a .image .overlay em {
     color: #fff;
     font-size: 26px;
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     display: inline-block;
 }
+
 .carousel-gallery .swiper-pagination {
     position: relative;
     bottom: auto;
     text-align: center;
     margin-top: 25px;
 }
+
 .carousel-gallery .swiper-pagination .swiper-pagination-bullet {
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
     transition: all .2s linear;
 }
+
 .carousel-gallery .swiper-pagination .swiper-pagination-bullet:hover {
     opacity: .7;
 }
+
 .carousel-gallery .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #d63031;
     transform: scale(1.1, 1.1)
 }
+
 /*# Carousel Gallery*/
 
 #about h1 {
-    font-family: "Unbounded", sans-serif;
+    font-family: Unbounded, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 35px;
@@ -564,52 +561,56 @@ button:hover {
     2%,64%{
       transform: translate(2px,0) skew(0deg);
     }
+
     4%,60%{
       transform: translate(-2px,0) skew(0deg);
     }
+
     62%{
       transform: translate(0,0) skew(5deg); 
     }
   }
 
-#about h1:before,
-#about h1:after{
+#about h1::before,
+#about h1::after{
     content: attr(title);
     position: absolute;
     left: 0;
 }
   
-#about h1:before{
-    animation: glitchTop 1s linear infinite;
+#about h1::before{
+    animation: glitch-top 1s linear infinite;
     clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
   
-@keyframes glitchTop{
+@keyframes glitch-top {
     2%,64% {
         transform: translate(2px,-2px);
     }
+
     4%,60% {
         transform: translate(-2px,2px);
     }
+
     62% {
         transform: translate(13px,-1px) skew(-13deg); 
     }
 }
   
-#about h1:after{
-    animation: glitchBotom 1.5s linear infinite;
+#about h1::after{
+    animation: glitch-bottom 1.5s linear infinite;
     clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
   
-@keyframes glitchBotom{
+@keyframes glitch-bottom {
     2%,64% {
         transform: translate(-2px,0);
     }
+
     4%,60% {
         transform: translate(-2px,0);
     }
+
     62% {
         transform: translate(-22px,5px) skew(21deg); 
     }
@@ -617,38 +618,39 @@ button:hover {
 
 #see-artworks {
     font-size: 18px;
-    padding: 12px 24px 12px 24px;
+    padding: 12px 24px;
     margin-bottom: 20px;
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
     #see-artworks {
         font-size: 16px;
     }
 }
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
     #about h1 {
         font-size: 30px;
     }
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
     #about h1 {
         font-size: 26px;
     }
 }
 
-@media (max-width: 460px) {
+@media (width <= 460px) {
     #about h1 {
         font-size: 23px;
     }
 }
 
-@media (max-width: 370px) {
+@media (width <= 370px) {
     #about h1 {
         font-size: 18px;
     }
+
     #see-artworks {
         font-size: 15px;
     }
@@ -683,14 +685,14 @@ button:hover {
 }
 
 .artist-frame {
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     background-color: lightgray;
     transition: 0.3s;
-    margin: 30px 20px 0px 20px;
+    margin: 30px 20px 0;
     padding-bottom: 15px;
     border-radius: 30px;
 }
+
 .artist-frame:hover {
     transform: scale(1.07, 1.07);
 }
@@ -698,13 +700,13 @@ button:hover {
 .artist-photo {
     width: 100%;
     height: 330px;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 30px 30px 0 0;
     object-fit: cover;
 }
 
 .artist-name {
     font-size: 25px;
-    margin:20px 15px 0px 15px;
+    margin:20px 15px 0;
 }
 
 .artist-socials {
@@ -723,11 +725,11 @@ button:hover {
     height: auto;
     text-align: left;
     font-size: 15px;  
-    margin: 10px 20px 0px 20px;
-    padding: 0px 10px 20px 10px;
+    margin: 10px 20px 0;
+    padding: 0 10px 20px;
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
     .artist-name {
         font-size: 20px;
     }
@@ -736,7 +738,7 @@ button:hover {
 /* CSS for the shop info section */
 
 #shop-info-section {
-    padding: 40px 15vw 40px 15vw;
+    padding: 40px 15vw;
 }
 
 /* CSS for the tattoo quote */
@@ -753,7 +755,8 @@ button:hover {
     height: 250px;
     text-shadow: 2px 2px #000;
 }
-#quote-section:after{
+
+#quote-section::after{
     content: "";
     width: 100%;
     height: 200%;
@@ -761,27 +764,27 @@ button:hover {
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.12) 60%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgb(0 0 0 / 12%) 60%, rgb(0 0 0) 100%);
 }
-#quote-section:before {
+
+#quote-section::before {
     content:"";
     width: 100%;
     height: 200%;
     position: absolute;
     top: 0;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0); backface-visibility: hidden;
+    left: 0; backface-visibility: hidden;
     transform: translateZ(0);
-    background: #000000 url("resources/quote-background.jpg") 100% 0 no-repeat;
+    background: #000 url("resources/quote-background.jpg") 100% 0 no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     animation: grow 150s linear 1ms infinite;
     transition: all 0.5s ease-in-out;
     z-index: -2
 }
+
 @keyframes grow {
-    0% { transform: scale(1) translateY(0px)}
+    0% { transform: scale(1) translateY(0)}
     50% { transform: scale(1.3) translateY(-200px)}
 }
 
@@ -790,20 +793,21 @@ button:hover {
     font-weight: bold;
     font-size: 28px;
     top: 50%;
-    color: rgb(180, 180, 180);
+    color: rgb(180 180 180);
 }
 
 #quote-author {
     font-family: "Noto Sans", sans-serif;
     font-size: 23px;
     margin-top: 15px;
-    color: rgb(150, 150, 150);
+    color: rgb(150 150 150);
 }
 
-@media (max-width: 450px) {
+@media (width <= 450px) {
     #quote {
         font-size: 20px;
     }
+
     #quote-author {
         font-size: 17px;
     }
