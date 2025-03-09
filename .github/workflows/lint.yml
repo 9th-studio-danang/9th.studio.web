@@ -1,0 +1,32 @@
+name: CI pipeline to run lint checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Prettier
+      run: npx prettier --check "*.html"
+
+    - name: Run HTMLHint
+      run: npx htmlhint "*.html"
+
+    - name: Run Stylelint
+      run: npx stylelint "*.css"

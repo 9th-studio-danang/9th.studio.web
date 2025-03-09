@@ -127,7 +127,7 @@ function videoScroll() {
 }
 
 function changeLanguage() {
-  const button = document.querySelector("#changeLanguageBtn");
+  const button = document.querySelector("#change-lang-btn");
   
   const languageContent = {
     VN: {
