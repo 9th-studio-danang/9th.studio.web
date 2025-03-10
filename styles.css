@@ -398,6 +398,15 @@ button:hover {
     object-fit: cover;
 }
 
+#tattoos-show-foreground,
+#tattoos-show iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* CSS for the arrow pointing down in the tattoos show section */
 
 .scroll-down {
@@ -775,7 +784,7 @@ button:hover {
     top: 0;
     left: 0; backface-visibility: hidden;
     transform: translateZ(0);
-    background: #000 url("resources/quote-background.jpg") 100% 0 no-repeat;
+    background: #000 url("https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/quote-background.jpg") 100% 0 no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     animation: grow 150s linear 1ms infinite;
