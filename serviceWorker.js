@@ -32,7 +32,7 @@ self.addEventListener('fetch', event => {
                 return cachedResponse;
             }
             // If no cached response is found, fetch from the network
-            return fetch(event.request, { mode: 'no-cors' }).then(networkResponse => {
+            return fetch(event.request).then(networkResponse => {
                 return caches.open(CACHE_NAME).then(cache => {
                     // Ensure the response is valid before caching it
                     if (networkResponse.ok) {
