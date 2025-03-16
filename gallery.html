@@ -1,8 +1,111 @@
-<!doctype html>
-<html
-  xmlns:og="http://opengraphprotocol.org/schema/"
-  xmlns:fb="http://www.facebook.com/2008/fbml"
-  lang="en-US"
->
-  Hello from gallery
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>9th.studio Gallery</title>
+      <link
+         rel="icon"
+         type="image/x-icon"
+         href="https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/9th-icon.ico"
+         />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
+         rel="stylesheet"
+         />
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css'>
+      <link rel="stylesheet" href="/assets/css/globalStyles.css">
+      <link rel="stylesheet" href="/assets/css/galleryStyles.css">
+   </head>
+
+   <body>
+      <!-- Navigation bar -->
+      <section>
+        <div id="nav-logo">
+          <h1>9th.studio</h1>
+        </div>
+        <div class="nav unselectable">
+          <button type="button" id="change-lang-btn" onclick="changeLanguage()">
+          VN
+          </button>
+          <input type="checkbox" id="nav-check" />
+          <div class="nav-header"></div>
+          <div class="nav-btn no-flash">
+              <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+              </label>
+          </div>
+          <div id="navlinks-container" class="nav-links">
+              <a href="/#about" id="aboutText" class="no-flash" target="_blank">About</a>
+              <a href="/#artists-section" id="artistText" class="no-flash" target="_blank">Artists</a>
+              <a href="/#shop-info-section" id="navContactText" class="no-flash" target="_blank">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-slider-wrapper">
+         <div class="text-slider">
+            <div class="text-slide">
+              <div class="text-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+            <div class="text-slide">
+              <div class="text-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+            <div class="text-slide">
+              <div class="text-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+            <div class="text-slide">
+              <div class="text-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+            <div class="text-slide">
+              <div class="text-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="slider-control">
+         <div class="prev">
+            <button class="no-flash arrow-button" type="button">
+            <
+            </button>
+         </div>
+         <div class="next">
+            <button class="no-flash arrow-button" type="button">
+            >
+            </button>
+         </div>
+      </div>
+
+      <div class="blocks">
+         <div class="block-1"></div>
+         <div class="block-2"></div>
+         <div class="block-3"></div>
+      </div>
+
+      <div class="overlay"></div>
+      <div class="image-slider">
+         <div class="image-slide" id="one" style="background: url(https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/gallery/quanvu-tattoo.jpeg) no-repeat 50% 50%; background-size: cover;"></div>
+         <div class="image-slide" id="two" style="background: url(https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/gallery/maya-dragon-tattoo.jpeg) no-repeat 50% 50%; background-size: cover;"></div>
+         <div class="image-slide" id="three" style="background: url(https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/gallery/lily-tattoo.jpeg) no-repeat 50% 50%; background-size: cover;"></div>
+         <div class="image-slide" id="four" style="background: url(https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/gallery/wolf-tattoo.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+         <div class="image-slide" id="five" style="background: url(https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/gallery/pot-tattoo.jpg) no-repeat 50% 50%; background-size: cover;"></div>
+      </div>
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js'></script>
+      <script  src="/assets/js/galleryScript.js"></script>
+      <script  src="/assets/js/galleryLanguageHandler.js"></script>
+   </body>
 </html>
