@@ -85,14 +85,18 @@
 
   <body>
     <div class="social-chat-container no-flash">
-      <a href="#" class="facebook-box"
-        ><i class="fa-brands fa-facebook-messenger fa-2x"></i
-      ></a>
-      <a href="#" class="instagram-box"
-        ><i class="fa-brands fa-instagram fa-2x"></i
-      ></a>
-      <a href="#" class="zalo-box"><i class=""></i>Zalo</a>
-      <a class="big-message-btn"><i class="fa-regular fa-message fa-2x"></i></a>
+      <a href="http://m.me/61574155042272" class="facebook-box" target="_blank">
+        <i class="fa-brands fa-facebook-messenger fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/m/9th.tattoostudio" class="instagram-box" target="_blank">
+        <i class="fa-brands fa-instagram fa-2x"></i>
+      </a>
+      <a href="mailto:9thtattoostudio@gmail.com" class="mail-box" target="_blank">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+      </a>
+      <div class="big-message-btn">
+        <i class="fa-regular fa-message fa-2x"></i>
+      </div>
     </div>
 
     <div class="scroll-down"></div>
@@ -135,8 +139,7 @@
 
     <section id="about" class="unselectable">
       <h1 class="center glitched" id="sloganText">
-        9th.studio is proud to be one of the best tattoo shops in Da Nang,
-        Vietnam.
+        At 9th.studio, we transform your vision into living art, etched beautifully into the canvas of your skin.
       </h1>
 
       <!--Carousel Gallery-->
@@ -281,17 +284,23 @@
       </div>
       <!--#Carousel Gallery-->
 
-      <button id="see-artworks" class="text">See all of our artworks</button>
+      <button id="see-artworks" class="text" onclick="window.open('https://www.instagram.com/9th.tattoostudio');">
+        See all of our artworks
+      </button>
     </section>
 
     <section id="shop-video">
-      <video autoplay muted playsinline loop oncontextmenu="return false;">
+      <!-- <video autoplay muted playsinline loop oncontextmenu="return false;">
         <source src="https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/shopvid.mp4" type="video/mp4" />
-      </video>
+      </video> -->
+      <img
+        class="unselectable"
+        src="https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/shopimage"
+        style="object-fit: cover; width: 100%; height: 100%;"/>
     </section>
 
     <section id="artists-section" class="unselectable">
-      <div class="bigger-text center">9th.studio artists</div>
+      <div id="artists-header" class="bigger-text center">Artists</div>
       <div id="artists-container" class="center">
         <div class="artist-frame">
           <img
@@ -431,51 +440,59 @@
     <section id="shop-info-section">
       <div id="location-wrapper" class="sub-shop-info-section">
         <div class="bigger-text" id="locationText">Location</div>
-        <p>27 Ngo Thy Si, Da Nang, Viet Nam</p>
+        <a>
+          25 Ngô Thì Sĩ, Đà Nẵng, Việt Nam
+        </a>
         <div id="map-buttons"></div>
       </div>
 
       <div id="hours-wrapper" class="sub-shop-info-section">
         <div class="bigger-text" id="hoursText">Hours</div>
-        <p id="timeText">Everyday: 10AM - 7PM</p>
+        <p id="timeText">Monday - Saturday: 10:00AM - 6:00PM<br/>Sunday: Closed</p>
       </div>
 
       <div id="contact-wrapper" class="sub-shop-info-section">
         <div class="bigger-text" id="contactText">Contact</div>
-        <p>
-          Email: email123@gmail.com
-          <br />
-          Phone: 999-999-9999
-          <br />
-          Instagram: abcxyz
-          <br />
-          Facebook: abcxyz
-        </p>
+        <p>Email:
+        <a href="mailto:9thtattoostudio@gmail.com" target="_blank">
+          9thtattoostudio@gmail.com
+        </a>
+        <br />
+        <p>Phone:
+        <a href="tel:0906555510" target="_blank">
+          0906555510
+        </a>
+        <br />
+        <p>Instagram:
+        <a href="https://www.instagram.com/9th.tattoostudio" target="_blank">
+          instagram.com/9th.tattoostudio
+        </a>
+        <br />
+        <p> Facebook:
+        <a href="https://www.facebook.com/people/9thstudio/61574155042272" target="_blank">
+          facebook.com/61574155042272
+        </a>
       </div>
 
       <div id="appointment-wrapper" class="sub-shop-info-section">
         <div class="bigger-text" id="apptHeaderText">Appointments</div>
         <p id="apptText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Feel free to contact us via email or social media for appointment. Walk-ins are also welcome!
+          <br/>
+          To help us prepare for your appointment, please provide details about your tattoo idea,
+          including the size and placement on your body.
+          <br/>
+          For the best experience, we recommend reaching out a few days in advance of your preferred
+          appointment date.
         </p>
       </div>
 
       <div id="pricing-wrapper" class="sub-shop-info-section">
         <div class="bigger-text" id="priceHeaderText">Pricing</div>
         <p id="pText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Please contact us for pricing. Prices may vary depending on the design,
+          size, and the complexity of the artwork. We will provide you with a quote
+          once the design is finalized.
         </p>
       </div>
     </section>
@@ -494,7 +511,7 @@
   <footer>
     <div class="bigger-text center" style="color: white">9th.studio</div>
     <div id="footer-social" class="center">
-      <a>
+      <a href="https://www.facebook.com/profile.php?id=61574155042272" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -524,7 +541,7 @@
           ></path>
         </svg>
       </a>
-      <a>
+      <a href="https://www.instagram.com/9th.tattoostudio" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"

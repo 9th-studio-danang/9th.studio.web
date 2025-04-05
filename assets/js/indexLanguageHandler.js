@@ -10,30 +10,47 @@ function changeLanguage() {
     VN: {
       aboutText: "Giới thiệu",
       apptHeaderText: "Đặt lịch",
-      apptText: "Liên hệ trực tiếp để đặt lịch hẹn.",
+      apptText: "Bạn có thể liên hệ với chúng tôi qua email hoặc mạng xã hội để đặt lịch hẹn.\
+          <br/>\
+          Khi đặt lịch, vui lòng cung cấp thông tin chi tiết về ý tưởng hình xăm của bạn,\
+          bao gồm kích thước và vị trí trên cơ thể.\
+          <br/>\
+          Để có được sự chuẩn bị tốt nhất, vui lòng liên hệ trước vài ngày so với ngày xăm bạn\
+          mong muốn.",
       artWorksBtnTxt: "Xem Thêm",
+      artistsHeaderText: "Nghệ sĩ xăm",
       navContactText: "Liên hệ",
       contactText: "Liên hệ",
       locationText: "Địa chỉ",
       hoursText: "Giờ làm việc",
-      timeText: "Hằng ngày: 10 giờ sáng - 7 giờ tối",
+      timeText: "Thứ 2-Thứ 7: 10AM - 6PM<br/>Chủ nhật: Đóng cửa",
       priceHeaderTxt: "Bảng giá",
-      pText: "100 ngàn cho 1 giờ",
-      sloganText: "9th.studio một trong những tattoo shops đỉnh nhất đất Đà Thành."
+      pText: "Vui lòng liên hệ để biết thêm thông tin về giá cả. Giá có thể thay đổi tùy thuộc vào thiết kế, \
+          kích thước và độ phức tạp của hình xăm. Chúng tôi sẽ báo giá cụ thể sau khi ý tưởng xăm được hoàn thiện.",
+      sloganText: "Tại 9th.studio, chúng tôi sẽ biến ý tưởng của bạn thành những tác phấm nghệ thuật sống động trên cơ thể."
     },
     Eng: {
       aboutText: "About",
       apptHeaderText: "Appointments",
-      apptText: "Contact for booking!",
-      artWorksBtnTxt: "Check out all artworks",
+      apptText: "Feel free to contact us via email or social media for appointment. Walk-ins are also welcome!\
+          <br/>\
+          To help us prepare for your appointment, please provide details about your tattoo idea,\
+          including the size and placement on your body.\
+          <br/>\
+          For the best experience, we recommend reaching out a few days in advance of your preferred\
+          appointment date.",
+      artWorksBtnTxt: "See all of our artworks",
       navContactText: "Contact",
+      artistsHeaderText: "Artists",
       contactText: "Contact",
       locationText: "Location",
       hoursText: "Open Hours",
-      timeText: "Everyday: 10AM - 7PM",
+      timeText: "Monday - Sunday: 10AM - 6PM<br/>Sunday: Closed",
       priceHeaderTxt: "Pricings",
-      pText: "$100 for an hour",
-      sloganText: "9th.studio is proud to be one of the best tattoo shops in Da Nang, Vietnam."
+      pText: "Please contact us for pricing. Prices may vary depending on the design, size, \
+          and the complexity of the artwork. We will provide you with a quote once the design \
+          is finalized.",
+      sloganText: "At 9th.studio, we transform your vision into living art, etched beautifully into the canvas of your skin."
     }
   };
 
@@ -46,6 +63,7 @@ function changeLanguage() {
   document.querySelector("#apptHeaderText").innerHTML = content.apptHeaderText;
   document.querySelector("#apptText").innerHTML = content.apptText;
   document.querySelector("#see-artworks").innerHTML = content.artWorksBtnTxt;
+  document.querySelector("#artists-header").innerHTML = content.artistsHeaderText;
   document.querySelector("#navContactText").innerHTML = content.navContactText;
   document.querySelector("#contactText").innerHTML = content.contactText;
   document.querySelector("#locationText").innerHTML = content.locationText;
