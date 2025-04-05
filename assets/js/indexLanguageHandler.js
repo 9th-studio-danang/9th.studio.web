@@ -27,7 +27,7 @@ function changeLanguage() {
       priceHeaderTxt: "Bảng giá",
       pText: "Vui lòng liên hệ để biết thêm thông tin về giá cả. Giá có thể thay đổi tùy thuộc vào thiết kế, \
           kích thước và độ phức tạp của hình xăm. Chúng tôi sẽ báo giá cụ thể sau khi ý tưởng xăm được hoàn thiện.",
-      sloganText: "Tại 9th.studio, chúng tôi sẽ biến ý tưởng của bạn thành những tác phấm nghệ thuật sống động trên cơ thể."
+      sloganText: "Tại 9th.studio, chúng tôi sẽ biến ý tưởng của bạn thành những tác phẩm nghệ thuật sống động trên cơ thể."
     },
     Eng: {
       aboutText: "About",
