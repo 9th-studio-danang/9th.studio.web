@@ -26,7 +26,7 @@ function changeLanguage() {
       timeText: "Thứ 2-Thứ 7: 10AM - 6PM<br/>Chủ nhật: Đóng cửa",
       priceHeaderTxt: "Bảng giá",
       pText: "Vui lòng liên hệ để biết thêm thông tin về giá cả. Giá có thể thay đổi tùy thuộc vào thiết kế, \
-          kích thước và độ phức tạp của hình xăm. Chúng tôi sẽ báo giá cụ thể sau khi ý tưởng xăm được hoàn thiện.",
+          kích thước và độ phức tạp của hình xăm. Chúng tôi sẽ báo giá cụ thể sau khi có đầy đủ thông tin.",
       sloganText: "Tại 9th.studio, chúng tôi sẽ biến ý tưởng của bạn thành những tác phẩm nghệ thuật sống động trên cơ thể."
     },
     Eng: {
@@ -48,8 +48,8 @@ function changeLanguage() {
       timeText: "Monday - Sunday: 10AM - 6PM<br/>Sunday: Closed",
       priceHeaderTxt: "Pricings",
       pText: "Please contact us for pricing. Prices may vary depending on the design, size, \
-          and the complexity of the artwork. We will provide you with a quote once the design \
-          is finalized.",
+          and the complexity of the artwork. We will provide you with a quote once all details \
+          are confirmed.",
       sloganText: "At 9th.studio, we transform your vision into living art, etched beautifully into the canvas of your skin."
     }
   };
