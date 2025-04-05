@@ -54,12 +54,12 @@ $(document).ready(function() {
     }
 
     if (!active3){
-      $(this).find('.zalo-box').css({
-        'background-color': '#0168fe',
+      $(this).find('.mail-box').css({
+        'background-color': '#a10101',
         'transform': 'translate(-120px, 0px)'
       });
     } else{
-      $(this).find('.zalo-box').css({
+      $(this).find('.mail-box').css({
         'background-color': 'gray',
         'transform': 'none'
       });

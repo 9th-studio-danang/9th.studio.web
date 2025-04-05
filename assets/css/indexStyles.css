@@ -83,6 +83,16 @@ button:hover {
     margin-bottom: 30px;
 }
 
+.image-fit {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
 /* CSS for message button */
 
 .social-chat-container {
@@ -128,19 +138,19 @@ button:hover {
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
 }
 
-.zalo-box {
+.mail-box {
     width:60%;
-    height:60%;
-    background-color:#0168fe;
+    height:calc(60% - 5px);
     border-radius:50%;
     position:absolute;
+    background-color: #a10101;
     color:white;
     text-align:center;
     line-height: 50px;
     text-decoration: none;
     top:25%;
     left:25%;
-    font-weight: 700;
+    padding-top: 5px;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
 }
 
@@ -179,8 +189,10 @@ button:hover {
         transition: all 500ms cubic-bezier(0.500, -0.400, 0.100, 1.400) .2s;
     }
 
-    .zalo-box {
-        font-size: 12px;
+    .mail-box {
+        font-size: 11px;
+        height:calc(60% - 3px);
+        padding-top: 3px;
         line-height: 40px;
         transition: all 500ms cubic-bezier(0.500, -0.400, 0.100, 1.400) .4s;
     }
@@ -560,6 +572,11 @@ button:hover {
 
 #shop-info-section {
     padding: 40px 15vw;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: row;
 }
 
 /* CSS for the tattoo quote */
