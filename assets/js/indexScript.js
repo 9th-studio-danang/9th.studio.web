@@ -1,17 +1,17 @@
 // Check if the browser supports service workers
-// if ('serviceWorker' in navigator) {
-//   // Wait for the window to load fully before registering the service worker
-//   window.addEventListener('load', () => {
-//       // Attempt to register the service worker with the given script URL
-//       navigator.serviceWorker.register('/serviceWorker.js')
-//           .then(registration => {
-//               console.log('Service Worker registered with scope:', registration.scope);
-//           })
-//           .catch(error => {
-//               console.error('Service Worker registration failed:', error);
-//           });
-//   });
-// }
+if ('serviceWorker' in navigator) {
+  // Wait for the window to load fully before registering the service worker
+  window.addEventListener('load', () => {
+      // Attempt to register the service worker with the given script URL
+      navigator.serviceWorker.register('/serviceWorker.js')
+          .then(registration => {
+              console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+              console.error('Service Worker registration failed:', error);
+          });
+  });
+}
 
 window.addEventListener('load', function() {
   videoScroll();
