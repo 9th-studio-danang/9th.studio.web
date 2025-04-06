@@ -23,7 +23,7 @@ function changeLanguage() {
       contactText: "Liên hệ",
       locationText: "Địa chỉ",
       hoursText: "Giờ làm việc",
-      timeText: "Thứ 2-Thứ 7: 10AM - 6PM<br/>Chủ nhật: Đóng cửa",
+      timeText: "Thứ 2 - Chủ Nhật: 10AM - 6PM",
       priceHeaderTxt: "Bảng giá",
       pText: "Vui lòng liên hệ để biết thêm thông tin về giá cả. Giá có thể thay đổi tùy thuộc vào thiết kế, \
           kích thước và độ phức tạp của hình xăm. Chúng tôi sẽ báo giá cụ thể sau khi có đầy đủ thông tin.",
@@ -45,7 +45,7 @@ function changeLanguage() {
       contactText: "Contact",
       locationText: "Location",
       hoursText: "Open Hours",
-      timeText: "Monday - Sunday: 10AM - 6PM<br/>Sunday: Closed",
+      timeText: "Monday - Sunday: 10AM - 6PM",
       priceHeaderTxt: "Pricings",
       pText: "Please contact us for pricing. Prices may vary depending on the design, size, \
           and the complexity of the artwork. We will provide you with a quote once all details \
