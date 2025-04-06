@@ -140,3 +140,27 @@ function videoScroll() {
     }
   }
 }
+
+/* Inject the images into the carousel gallery */
+document.addEventListener("DOMContentLoaded", () => {
+  const imageUrls = Array.from({ length: 11 }, (_, i) =>
+    `https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/landing-page-tattoos/tat${i + 1}.jpg`
+  );
+
+  const wrapper = document.getElementById('carousel-wrapper');
+
+  imageUrls.forEach((url) => {
+    const slide = document.createElement('div');
+    slide.className = 'swiper-slide';
+    slide.innerHTML = `
+      <a href="${url}" data-fancybox="gallery">
+        <div class="image" style="background-image: url(${url})">
+          <div class="overlay">
+            <em class="mdi mdi-magnify-plus"></em>
+          </div>
+        </div>
+      </a>
+    `;
+    wrapper.appendChild(slide);
+  });
+});
