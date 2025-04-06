@@ -1,8 +1,10 @@
 body {
     margin: 0;
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
+    font-size: 19px;
 }
 
 img {
@@ -121,6 +123,7 @@ button:hover {
     z-index:19;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
     position:absolute;
+    font-size: 16px;
 }
 
 .instagram-box {
@@ -136,6 +139,7 @@ button:hover {
     left:25%;
     z-index:19;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
+    font-size: 16px;
 }
 
 .mail-box {
@@ -152,6 +156,7 @@ button:hover {
     left:25%;
     padding-top: 5px;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
+    font-size: 15px;
 }
 
 .big-message-btn {
@@ -203,6 +208,7 @@ button:hover {
         width: 60px;
         height: 60px;
         line-height:75px;
+        font-size: 16px;
     }
 }
 
@@ -262,20 +268,20 @@ button:hover {
 #about {
     height: auto;
     text-align: center;
-    padding: 20px;
+    padding: 20px 40px;
     overflow: hidden; /* Prevent content from overflowing */
 }
 
 @media (width <= 480px) {
     #about {
-        padding: 15px 10px;
+        padding: 0px 20px;
     }
 }
 
 /* Carousel Gallery */
 .carousel-gallery {
 	margin: 30px 0;
-	padding: 0 30px;
+	padding: 0 30px 10px 30px;
 	max-width: 100%;
 	box-sizing: border-box;
 	overflow: hidden; /* Prevent content from overflowing */
@@ -380,7 +386,7 @@ button:hover {
 
 /*# Carousel Gallery*/
 
-#about h1 {
+#about p {
     font-family: Unbounded, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -404,14 +410,14 @@ button:hover {
     }
   }
 
-#about h1::before,
-#about h1::after{
+#about p::before,
+#about p::after{
     content: attr(title);
     position: absolute;
     left: 0;
 }
   
-#about h1::before{
+#about p::before{
     animation: glitch-top 1s linear infinite;
     clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
@@ -430,7 +436,7 @@ button:hover {
     }
 }
   
-#about h1::after{
+#about p::after{
     animation: glitch-bottom 1.5s linear infinite;
     clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
@@ -462,25 +468,25 @@ button:hover {
 }
 
 @media (width <= 1000px) {
-    #about h1 {
-        font-size: 30px;
+    #about p {
+        font-size: 29px;
     }
 }
 
 @media (width <= 700px) {
-    #about h1 {
-        font-size: 26px;
+    #about p {
+        font-size: 25px;
     }
 }
 
 @media (width <= 460px) {
-    #about h1 {
-        font-size: 23px;
+    #about p {
+        font-size: 21px;
     }
 }
 
 @media (width <= 370px) {
-    #about h1 {
+    #about p {
         font-size: 18px;
     }
 
@@ -557,7 +563,7 @@ button:hover {
 .artist-description {
     height: auto;
     text-align: left;
-    font-size: 15px;  
+    font-size: 17px;  
     margin: 10px 20px 0;
     padding: 0 10px 20px;
 }
@@ -627,7 +633,6 @@ button:hover {
 }
 
 #quote {
-    font-family: "Noto Sans", sans-serif;
     font-weight: bold;
     font-size: 28px;
     top: 50%;
@@ -635,7 +640,6 @@ button:hover {
 }
 
 #quote-author {
-    font-family: "Noto Sans", sans-serif;
     font-size: 23px;
     margin-top: 15px;
     color: rgb(150 150 150);
