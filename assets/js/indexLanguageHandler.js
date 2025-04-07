@@ -1,3 +1,5 @@
+import { artistsData } from './data/artists.js';
+
 var contentMap = {
   "#aboutText": {
     VN: "Giới thiệu",
@@ -68,9 +70,22 @@ var contentMap = {
   }
 };
 
+// Dynamically add content for artists to contentMap
+Object.entries(artistsData).forEach(([id, artist]) => {
+  contentMap[`#${id}-title`] = {
+    VN: artist.title.VN,
+    Eng: artist.title.Eng
+  };
+  contentMap[`#${id}-desc`] = {
+    VN: artist.desc.VN,
+    Eng: artist.desc.Eng
+  };
+});
+
 $(document).ready(function() {
   var langChangeButton = document.querySelector("#change-lang-btn");
-  langChangeButton.innerHTML = "VN";
+  langChangeButton.innerHTML = "Eng";
+  changeLanguage();
 });
 
 function changeLanguage() {
@@ -86,3 +101,4 @@ function changeLanguage() {
     }
   }
 }
+window.changeLanguage = changeLanguage;
