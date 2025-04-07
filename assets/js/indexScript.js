@@ -80,7 +80,7 @@ $(document).ready(function() {
 
 // Initialize the carousel gallery
 function initCarousel() {
-  var swiper = new Swiper('.carousel-gallery .swiper-container', {
+  new Swiper('.carousel-gallery .swiper-container', {
     effect: 'slide',
     speed: 900,
     slidesPerView: 5,
@@ -123,6 +123,26 @@ function initCarousel() {
       }
     }
   });
+
+  // Create an IntersectionObserver to track visibility of the carousel
+  const galeryObserver = new IntersectionObserver((entries, _) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // When the carousel is in view, enable autoplay
+        swiper.autoplay.start();
+      } else {
+        // When the carousel is out of view, disable autoplay
+        swiper.autoplay.stop();
+      }
+    });
+  }, {
+    // Only trigger when at lease 50% of the image is visible
+    threshold: 0.5
+  });
+
+  // Start observing the carousel container
+  const carouselElement = document.querySelector('.carousel-gallery');
+  galeryObserver.observe(carouselElement);
 }
 
 /**
