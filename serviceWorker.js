@@ -4,7 +4,7 @@ const CACHE_NAME = 'video-cache-v1';
 // Specify the list of resources to cache
 const urlsToCache = [
     'https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/intro-vid.mp4',
-    'https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/shopvid.mp4'
+    'https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/shopimage'
 ];
 
 // Install event - Caches specified resources during the service worker's

@@ -7,4 +7,8 @@ window.addEventListener("load", () => {
     preloader.style.opacity = "0";
     preloader.style.pointerEvents = "none";
     setTimeout(() => preloader.remove(), 700);
+
+    if (document.body.classList.contains('no-scroll')) {
+        document.body.classList.remove('no-scroll');
+    }
 });

@@ -6,6 +6,12 @@ button:hover {
     cursor: pointer;
 }
 
+.no-scroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
 .no-flash {
     /* Remove onclick Background Color Change */
     -webkit-touch-callout: none;

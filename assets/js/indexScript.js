@@ -4,14 +4,19 @@ import { artistsData } from './data/artists.js';
 if ('serviceWorker' in navigator) {
   // Wait for the window to load fully before registering the service worker
   window.addEventListener('load', () => {
-      // Attempt to register the service worker with the given script URL
-      navigator.serviceWorker.register('/serviceWorker.js')
-          .then(registration => {
-              console.log('Service Worker registered with scope:', registration.scope);
-          })
-          .catch(error => {
-              console.error('Service Worker registration failed:', error);
-          });
+    // Attempt to register the service worker with the given script URL
+    navigator.serviceWorker
+      .register('/serviceWorker.js')
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(error => {
+        console.error('Service Worker registration failed:', error);
+      });
+    
+    // Now that the page is fully load, play the video
+    const introvid = document.querySelector("section#tattoos-show video");
+    introvid.setAttribute("autoplay", "true");
   });
 }
 
