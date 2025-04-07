@@ -1,10 +1,11 @@
 import { artistsData } from './data/artists.js';
 
-// Check if the browser supports service workers
-if ('serviceWorker' in navigator) {
-  // Wait for the window to load fully before registering the service worker
-  window.addEventListener('load', () => {
-    // Attempt to register the service worker with the given script URL
+
+// Actions to perform when the page is fully loaded
+window.addEventListener('load', () => {
+  // Check if the browser supports service workers
+  // If yes, attempt to register the service worker with the given script URL
+  if ('serviceWorker' in navigator) {
     navigator.serviceWorker
       .register('/serviceWorker.js')
       .then(registration => {
@@ -13,15 +14,16 @@ if ('serviceWorker' in navigator) {
       .catch(error => {
         console.error('Service Worker registration failed:', error);
       });
-    
-    // Now that the page is fully load, play the video
-    const introvid = document.getElementById("intro-tattoo-show-video");
-    introvid.setAttribute("autoplay", "true");
-    introvid.play().catch(function(err) {
-      console.error("Error attempting to play video:", err);
-    })
-  });
-}
+  }
+  
+  // Now that the page is fully load, play the video
+  const introvid = document.getElementById("intro-tattoo-show-video");
+  introvid.setAttribute("autoplay", "true");
+  introvid.play().catch(function(err) {
+    console.error("Error attempting to play video:", err);
+  })
+});
+
 
 window.addEventListener('load', function() {
   videoScroll();
