@@ -15,8 +15,11 @@ if ('serviceWorker' in navigator) {
       });
     
     // Now that the page is fully load, play the video
-    const introvid = document.querySelector("section#tattoos-show video");
+    const introvid = document.getElementById("intro-tattoo-show-video");
     introvid.setAttribute("autoplay", "true");
+    introvid.play().catch(function(err) {
+      console.error("Error attempting to play video:", err);
+    })
   });
 }
 
@@ -80,7 +83,7 @@ $(document).ready(function() {
 
 // Initialize the carousel gallery
 function initCarousel() {
-  new Swiper('.carousel-gallery .swiper-container', {
+  var swiper = new Swiper('.carousel-gallery .swiper-container', {
     effect: 'slide',
     speed: 900,
     slidesPerView: 5,
