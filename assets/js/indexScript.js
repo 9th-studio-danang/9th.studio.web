@@ -222,9 +222,7 @@ function injectArtists() {
     var hasFacebook = artist?.facebook && artist.facebook;
   
     const div = document.createElement("div");
-    div.className = "artist-frame";
-    div.innerHTML = `
-      <img class="artist-photo" oncontextmenu="return false;" src="${artist.image}" alt="${artist.name}" />
+    const artistSocialPanel = `
       <div class="artist-socials">
         ${hasInstagram
             ? `<a href="${artist.instagram}" aria-label="Instagram" target="_blank">${instagramIcon}</a>`
@@ -233,6 +231,12 @@ function injectArtists() {
             ? `<a href="${artist.facebook}" aria-label="Facebook" target="_blank">${facebookIcon}</a>`
             : ''}
       </div>
+    `
+    div.className = "artist-frame";
+    div.innerHTML = `
+      <img class="artist-photo" oncontextmenu="return false;" src="${artist.image}" alt="${artist.name}" />
+      <!-- Currently commenting out the social media buttons. We will put this back later on. -->
+      <!-- ${artistSocialPanel} -->
       <p id="${id}-name" class="bigger-text center artist-name">${artist.name}</p>
       <p id="${id}-title" class="artist-title center">${artist.title[initialLanguage]}</p>
       <p id="${id}-desc" class="artist-description">${artist.desc[initialLanguage]}</p>

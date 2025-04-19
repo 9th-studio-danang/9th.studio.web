@@ -1,44 +1,44 @@
 export const artistsData = {
     "artist1": {
-        name: "Trình Nhật",
+        name: "Trình",
         title: {
-            Eng: "Main artist",
+            Eng: "Lead artist",
             VN: "Nghệ sĩ chính",
         },
         desc: {
-            Eng: "Trinh is known for his modern and creative tattoo style. He has many years of experience in the industry and has worked with various clients to create unique body art.",
-            VN: "Trình được biết đến với phong cách xăm hình hiện đại và sáng tạo. Anh ấy đã có nhiều năm kinh nghiệm trong ngành và đã làm việc với nhiều khách hàng khác nhau để tạo ra những tác phẩm nghệ thuật độc đáo trên cơ thể.",
+            Eng: "Trinh specializes in blackwork and micro-realistic tattoos, creating pieces that blend precision with artistry. His work reflects a deep love for clean, bold design—tattoos that are both visually striking and built to last.",
+            VN: "Trình là một nghệ sĩ chuyên về phong cách blackwork và micro-realistic. Những sản phẩm của anh được thiết kế sắc nét và mạnh mẽ, gây ấn tượng cao về mặt thị giác.",
         },
-        image: "https://images.squarespace-cdn.com/content/v1/523f32e4e4b0019d4f5d2e8c/1678899194645-4716578FKO6APU3QZUT4/Mug-2.jpg",
-        instagram: "https://www.instagram.com/tr.ink91",
-        facebook: "#"
+        image: "https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/artists/trinh.jpg",
+        instagram: "https://www.instagram.com/stories/highlights/18056612534150879/",
+        facebook: "https://www.facebook.com/trinh.nhat.58"
     },
     "artist2": {
-        name: "Artist B",
+        name: "Khoa",
         title: {
-            Eng: "Main artist",
-            VN: "Nghệ sĩ chính",
+            Eng: "Junior artist",
+            VN: "Nghệ sĩ",
         },
         desc: {
-            Eng: "B is a tattoo artist with a unique style that combines traditional and modern elements. He has a passion for creating intricate designs that tell a story.",
-            VN: "B là một nghệ sĩ xăm hình với phong cách độc đáo kết hợp giữa các yếu tố truyền thống và hiện đại. Anh ấy đam mê tạo ra những thiết kế tinh xảo kể một câu chuyện.",
+            Eng: "Khoa focuses on bold blackwork and traditional tattoos. His style is rooted in strong lines, solid fills, and classic imagery, bringing a modern edge to old-school tattoos.",
+            VN: "Khoa chuyên về phong cách blackwork và traditional. Phong cách của anh được tạo nên bởi những đường nét dứt khoát và mạnh mẽ, mang một chút hơi hướng cổ điển và cá tính.",
         },
-        image: "https://images.squarespace-cdn.com/content/v1/523f32e4e4b0019d4f5d2e8c/1644695467784-HBEEU95VGRR6ZF5QCPYB/Mug-5.jpg",
-        instagram: "#",
-        facebook: "#"
+        image: "https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/artists/khoa.jpg",
+        instagram: "https://www.instagram.com/stories/highlights/17892616419101094/",
+        facebook: ""
     },
     "artist3": {
-        name: "Artist C",
+        name: "Thắng",
         title: {
-            Eng: "Collaborator artist",
-            VN: "Cộng tác viên",
+            Eng: "Junior Artist",
+            VN: "Nghệ sĩ",
         },
         desc: {
-            Eng: "C is a tattoo artist who specializes in black and grey realism. He has a keen eye for detail and strives to create tattoos that look like photographs.",
-            VN: "C là một nghệ sĩ xăm hình chuyên về hiện thực đen trắng và xám. Anh ấy có con mắt tinh tường cho chi tiết và cố gắng tạo ra những hình xăm trông giống như những bức ảnh.",
+            Eng: "Thang specializes in fine line and mini color designs. His artwork is eye-catching, blending subtle elegance with vibrant pops of color.",
+            VN: "Thắng thiên về phong cách fine line và hình xăm màu mini. Những sản phẩm của anh thu hút ánh nhìn bởi sự vui tươi nhẹ nhàng cùng những điểm nhấn màu sắc nổi bật.",
         },
-        image: "https://images.squarespace-cdn.com/content/v1/523f32e4e4b0019d4f5d2e8c/1683562433725-5240GG1R42I9FQXXBDEN/Mug-7.jpg",
-        instagram: "#",
-        facebook: "#"
+        image: "https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/artists/thang.jpg",
+        instagram: "https://www.instagram.com/stories/highlights/18023351537474391/",
+        facebook: ""
     },
 }
