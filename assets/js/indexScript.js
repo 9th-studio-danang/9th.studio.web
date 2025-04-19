@@ -1,28 +1,33 @@
 import { artistsData } from './data/artists.js';
 
+// This code below registers the service worker
+// Comment out for now since service worker does cache data and the next update may not
+// be available for devices already accessed the web since the browser will use the cached
+// data instead of the new data.
+// Will bring this back once the web is fully developed.
 
 // Actions to perform when the page is fully loaded
-window.addEventListener('load', () => {
-  // Check if the browser supports service workers
-  // If yes, attempt to register the service worker with the given script URL
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-      .register('/serviceWorker.js')
-      .then(registration => {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch(error => {
-        console.error('Service Worker registration failed:', error);
-      });
-  }
+// window.addEventListener('load', () => {
+//   // Check if the browser supports service workers
+//   // If yes, attempt to register the service worker with the given script URL
+//   if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker
+//       .register('/serviceWorker.js')
+//       .then(registration => {
+//         console.log('Service Worker registered with scope:', registration.scope);
+//       })
+//       .catch(error => {
+//         console.error('Service Worker registration failed:', error);
+//       });
+//   }
   
-  // Now that the page is fully load, play the video
-  const introvid = document.getElementById("intro-tattoo-show-video");
-  introvid.setAttribute("autoplay", "true");
-  introvid.play().catch(function(err) {
-    console.error("Error attempting to play video:", err);
-  })
-});
+//   // Now that the page is fully load, play the video
+//   const introvid = document.getElementById("intro-tattoo-show-video");
+//   introvid.setAttribute("autoplay", "true");
+//   introvid.play().catch(function(err) {
+//     console.error("Error attempting to play video:", err);
+//   })
+// });
 
 
 window.addEventListener('load', function() {
