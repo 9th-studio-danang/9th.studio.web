@@ -175,7 +175,7 @@ function videoScroll() {
 
 /* Inject the images into the carousel gallery */
 function injectImagesToCarouselGallery() {
-  const imageUrls = Array.from({ length: 11 }, (_, i) =>
+  const imageUrls = Array.from({ length: 12 }, (_, i) =>
     `https://luantruong.sgp1.cdn.digitaloceanspaces.com/9th.studio/landing-page-tattoos/tat${i + 1}.jpg`
   );
 
