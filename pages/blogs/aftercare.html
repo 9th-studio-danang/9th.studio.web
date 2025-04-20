@@ -33,13 +33,13 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="9th.studio tattoo shop in Da Nang, Vietnam"
+      content="9th.studio | Tattoo aftercare instructions"
     />
     <meta itemprop="name" content="9th.studio" />
     <meta itemprop="url" content="https://www.9th-studio.com" />
     <meta
       itemprop="description"
-      content="9th.studio tattoo shop in Da Nang, Vietnam"
+      content="9th.studio | Tattoo aftercare instructions"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="9th.studio | Tattoo Aftercare" />
@@ -145,31 +145,14 @@
   </head>
 
   <body>
-    <div id="chat-button-placeholder"></div>
-    <script>
-      fetch("/assets/components/chatbutton.html")
-        .then(response => response.text())
-        .then(data => { document.getElementById("chat-button-placeholder").innerHTML = data; });
-    </script>
-
     <div id="navbar-placeholder"></div>
-    <script>
-      fetch("/assets/components/navbar.html")
-        .then(response => response.text())
-        .then(data => { document.getElementById("navbar-placeholder").innerHTML = data; });
-    </script>
-
+    <div id="chat-button-placeholder"></div>
     <div id="content-placeholder"></div>
 
     <footer>
       &copy; 9th.studio – All rights reserved.
       <div id="footer-decorate"></div>
     </footer>
-    <script>
-      fetch("/assets/components/footer.html")
-        .then(response => response.text())
-        .then(data => { document.getElementById("footer-decorate").innerHTML = data; });
-    </script>
   </body>
 
   <script>
@@ -242,10 +225,22 @@
       contentPlaceholder.innerHTML = content;
     }
 
-    window.addEventListener("load", () => {
-      var langChangeButton = document.querySelector("#change-lang-btn");
-      langChangeButton.innerHTML = "Eng";
-      changeLanguage();
+    window.addEventListener("DOMContentLoaded", () => {
+      const loadNavbar = fetch("/assets/components/navbar.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("navbar-placeholder").innerHTML = data; });
+      fetch("/assets/components/chatbutton.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("chat-button-placeholder").innerHTML = data; });
+      fetch("/assets/components/footer.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("footer-decorate").innerHTML = data; });
+
+      Promise.all([loadNavbar]).then(() => {
+        var langChangeButton = document.querySelector("#change-lang-btn");
+        langChangeButton.innerHTML = "Eng";
+        changeLanguage();
+      });
     });
   </script>
 </html>
