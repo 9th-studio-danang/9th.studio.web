@@ -18,6 +18,9 @@
       <link rel="stylesheet" href="/assets/css/globalStyles.css">
       <link rel="stylesheet" href="/assets/css/galleryStyles.css">
       <link rel="stylesheet" href="/assets/components/navbar.css">
+      <link rel="stylesheet" href="/assets/components/chatbutton.css">
+
+      <script type="module" src="/assets/components/chatbutton.js"></script>
    </head>
 
    <body>
@@ -27,6 +30,13 @@
         fetch("/assets/components/navbar.html")
           .then(response => response.text())
           .then(data => { document.getElementById("navbar-placeholder").innerHTML = data; });
+      </script>
+
+      <div id="chatbutton-placeholder"></div>
+      <script>
+         fetch("/assets/components/chatbutton.html")
+            .then(response => response.text())
+            .then(data => { document.getElementById("chatbutton-placeholder").innerHTML = data; });
       </script>
 
       <div class="text-slider-wrapper">

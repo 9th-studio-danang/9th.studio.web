@@ -26,4 +26,4 @@ window.addEventListener("load", () => {
   changeLanguage();
 });
 
-window.changeLanguage = changeLanguage();
+window.changeLanguage = changeLanguage;

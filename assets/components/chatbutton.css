@@ -1,0 +1,114 @@
+.social-chat-container {
+    bottom:20px;
+    right:20px;
+    position:fixed;
+    display:block;
+    width:80px;
+    height:80px;
+    background-color:transparent;
+    border-radius:50%;
+    z-index:20;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 75%);
+}
+
+.facebook-box {
+    width:60%;
+    height:60%;
+    background-color:#09F;
+    border-radius:50%;
+    color:white;
+    text-align:center;
+    line-height:62px;
+    top:25%;
+    left:25%;
+    z-index:19;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    position:absolute;
+    font-size: 16px;
+}
+
+.instagram-box {
+    width:60%;
+    height:60%;
+    background-color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    border-radius:50%;
+    position:absolute;
+    color:white;
+    text-align:center;
+    line-height:62px;
+    top:25%;
+    left:25%;
+    z-index:19;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
+    font-size: 16px;
+}
+
+.mail-box {
+    width:60%;
+    height:calc(60% - 5px);
+    border-radius:50%;
+    position:absolute;
+    background-color: #a10101;
+    color:white;
+    text-align:center;
+    line-height: 50px;
+    text-decoration: none;
+    top:25%;
+    left:25%;
+    padding-top: 5px;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
+    font-size: 15px;
+}
+
+.big-message-btn {
+    bottom: 20px;
+    right:  20px;
+    width: 80px;
+    height: 80px;
+    background: #212121;
+    border-radius: 50%;
+    z-index: 21;
+    color: white;
+    text-align: center;
+    line-height: 95px;
+    cursor: pointer;
+    position: fixed;
+}
+
+@media (width <= 500px) {
+    .social-chat-container {
+        bottom: 7px;
+        right: 7px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .facebook-box {
+        font-size: 12px;
+        line-height: 45px;
+        transition: all 500ms cubic-bezier(0.500, -0.400, 0.100, 1.400);
+    }
+
+    .instagram-box {
+        font-size: 12px;
+        line-height: 45px;
+        transition: all 500ms cubic-bezier(0.500, -0.400, 0.100, 1.400) .2s;
+    }
+
+    .mail-box {
+        font-size: 11px;
+        height:calc(60% - 3px);
+        padding-top: 3px;
+        line-height: 40px;
+        transition: all 500ms cubic-bezier(0.500, -0.400, 0.100, 1.400) .4s;
+    }
+
+    .big-message-btn {
+        bottom: 7px;
+        right: 7px;
+        width: 60px;
+        height: 60px;
+        line-height:75px;
+        font-size: 16px;
+    }
+}

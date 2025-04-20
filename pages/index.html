@@ -78,19 +78,16 @@
       rel="stylesheet"
       href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
     />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
 
     <link rel="stylesheet" href="/assets/css/globalStyles.css" />
     <link rel="stylesheet" href="/assets/css/indexStyles.css" />
-
     <link rel="stylesheet" href="/assets/components/navbar.css" />
+    <link rel="stylesheet" href="/assets/components/chatbutton.css" />
+    <link rel="stylesheet" href="/assets/components/footer.css" />
 
     <script type="module" src="/assets/js/indexScript.js"></script>
     <script type="module" src="/assets/js/indexLanguageHandler.js"></script>
+    <script type="module" src="/assets/components/chatbutton.js"></script>
   </head>
 
   <body class="no-scroll">
@@ -101,20 +98,12 @@
       </div>
     </div>
 
-    <div class="social-chat-container no-flash">
-      <a href="http://m.me/61574155042272" class="facebook-box" target="_blank">
-        <i class="fa-brands fa-facebook-messenger fa-2x"></i>
-      </a>
-      <a href="https://www.instagram.com/9th.tattoostudio/" class="instagram-box" target="_blank">
-        <i class="fa-brands fa-instagram fa-2x"></i>
-      </a>
-      <a href="mailto:9thtattoostudio@gmail.com" class="mail-box" target="_blank">
-        <i class="fa-solid fa-envelope fa-2x"></i>
-      </a>
-      <div class="big-message-btn">
-        <i class="fa-regular fa-message fa-2x"></i>
-      </div>
-    </div>
+    <div id="chat-button-placeholder"></div>
+    <script>
+      fetch("/assets/components/chatbutton.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("chat-button-placeholder").innerHTML = data; });
+    </script>
 
     <div class="scroll-down"></div>
 
@@ -240,27 +229,12 @@
         </p>
       </div>
     </section>
-
-    <section id="quote-section" class="unselectable">
-      <div class="vertical-align">
-        <div id="quote">
-          "Show me a man with a tattoo, and I'll show you a man with an
-          interesting past."
-        </div>
-        <div id="quote-author">Jack London</div>
-      </div>
-    </section>
   </body>
 
-  <footer>
-    <div class="logo-font center unselectable" style="color: white; font-size: 32px;">9th.studio</div>
-    <div id="footer-social" class="center">
-      <a href="https://www.facebook.com/profile.php?id=61574155042272" target="_blank">
-        <img src="/assets/media/facebook.svg" class="footer-social-icon"/>
-      </a>
-      <a href="https://www.instagram.com/9th.tattoostudio" target="_blank">
-        <img src="/assets/media/instagram.svg" class="footer-social-icon"/>
-      </a>
-    </div>
-  </footer>
+  <footer id="footer"></footer>
+  <script>
+    fetch("/assets/components/footer.html")
+      .then(response => response.text())
+      .then(data => { document.getElementById("footer").innerHTML = data; });
+  </script>
 </html>
