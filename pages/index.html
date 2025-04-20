@@ -87,6 +87,8 @@
     <link rel="stylesheet" href="/assets/css/globalStyles.css" />
     <link rel="stylesheet" href="/assets/css/indexStyles.css" />
 
+    <link rel="stylesheet" href="/assets/components/navbar.css" />
+
     <script type="module" src="/assets/js/indexScript.js"></script>
     <script type="module" src="/assets/js/indexLanguageHandler.js"></script>
   </head>
@@ -115,30 +117,13 @@
     </div>
 
     <div class="scroll-down"></div>
-    <div id="nav-logo" class="logo-font unselectable">
-      <h1>9th.studio</h1>
-    </div>
-    <div class="nav unselectable">
-      <button type="button" id="change-lang-btn" onclick="changeLanguage()">
-        VN
-      </button>
-      <input type="checkbox" id="nav-check" />
-      <div class="nav-header"></div>
-      <div class="nav-btn no-flash">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-      <div id="navlinks-container" class="nav-links">
-        <a href="#about" id="aboutText" class="no-flash">About</a>
-        <a href="#artists-section" id="artistText" class="no-flash">Artists</a>
-        <a href="#shop-info-section" id="navContactText" class="no-flash"
-          >Contact</a
-        >
-      </div>
-    </div>
+
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch("/assets/components/navbar.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("navbar-placeholder").innerHTML = data; });
+    </script>
 
     <section id="tattoos-show">
       <video

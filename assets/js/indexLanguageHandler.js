@@ -82,7 +82,7 @@ Object.entries(artistsData).forEach(([id, artist]) => {
   };
 });
 
-$(document).ready(function() {
+window.addEventListener("load", () => {
   var langChangeButton = document.querySelector("#change-lang-btn");
   langChangeButton.innerHTML = "Eng";
   changeLanguage();
@@ -101,4 +101,5 @@ function changeLanguage() {
     }
   }
 }
+
 window.changeLanguage = changeLanguage;

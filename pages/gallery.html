@@ -17,37 +17,17 @@
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css'>
       <link rel="stylesheet" href="/assets/css/globalStyles.css">
       <link rel="stylesheet" href="/assets/css/galleryStyles.css">
+      <link rel="stylesheet" href="/assets/components/navbar.css">
    </head>
 
    <body>
       <!-- Navigation bar -->
-      <section>
-        <div id="nav-logo"
-             class="logo-font unselectable"
-             style="font-size: 30px; margin-top: -7px;"
-             onclick="window.open('/');">
-          <h1>9th.studio</h1>
-        </div>
-        <div class="nav unselectable">
-          <button type="button" id="change-lang-btn" onclick="changeLanguage()">
-          VN
-          </button>
-          <input type="checkbox" id="nav-check" />
-          <div class="nav-header"></div>
-          <div class="nav-btn no-flash">
-              <label for="nav-check">
-              <span></span>
-              <span></span>
-              <span></span>
-              </label>
-          </div>
-          <div id="navlinks-container" class="nav-links">
-              <a href="/#about" id="aboutText" class="no-flash" target="_blank">About</a>
-              <a href="/#artists-section" id="artistText" class="no-flash" target="_blank">Artists</a>
-              <a href="/#shop-info-section" id="navContactText" class="no-flash" target="_blank">Contact</a>
-          </div>
-        </div>
-      </section>
+      <div id="navbar-placeholder"></div>
+      <script>
+        fetch("/assets/components/navbar.html")
+          .then(response => response.text())
+          .then(data => { document.getElementById("navbar-placeholder").innerHTML = data; });
+      </script>
 
       <div class="text-slider-wrapper">
          <div class="text-slider">

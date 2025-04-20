@@ -1,8 +1,3 @@
-$(document).ready(function() {
-  var langChangeButton = document.querySelector("#change-lang-btn");
-  langChangeButton.innerHTML = "VN";
-});
-
 function changeLanguage() {
     const button = document.querySelector("#change-lang-btn");
 
@@ -24,3 +19,11 @@ function changeLanguage() {
       document.querySelector("#aboutText").innerHTML = content.aboutText;
       document.querySelector("#navContactText").innerHTML = content.navContactText;
 }
+
+window.addEventListener("load", () => {
+  var langChangeButton = document.querySelector("#change-lang-btn");
+  langChangeButton.innerHTML = "Eng";
+  changeLanguage();
+});
+
+window.changeLanguage = changeLanguage();
