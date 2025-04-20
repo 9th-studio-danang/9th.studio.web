@@ -3,7 +3,7 @@
     position: fixed;
     color: white;
     z-index: 1000;
-    top: -23px;
+    top: 5px;
     font-size: 23px;
     margin-bottom: 10px;
 }
@@ -13,7 +13,7 @@
 }
 
 #change-lang-btn {
-    position:fixed;
+    position: fixed;
     right: 570px;
     top: 27px;
     font-family: Unbounded, sans-serif;
@@ -22,7 +22,7 @@
     font-style: normal;
     color: white;
     background-color: transparent;
-    border: 2px solid black;
+    border: none;
     border-radius: 10px;
 }
 
@@ -78,7 +78,7 @@
 #navlinks-container a{
     margin-left: 10px;
     margin-right: 10px;
-    width: 125px;
+    width: 140px;
 }
 
 @media (width <= 1150px) {
@@ -89,18 +89,19 @@
     }
 
     #change-lang-btn {
-        right: 460px;
+        right: 470px;
+        top: 30px;
     }
 
     #navlinks-container a {
-        width: 100px;
+        width: 115px;
     }
 }
 
 @media (width <= 910px) {
     #nav-logo {
-        font-size: 13px;
-        margin-top: 25px;
+        font-size: 16px;
+        top: 15px;
     }
 
     #change-lang-btn {
