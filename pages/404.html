@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/assets/css/globalStyles.css" />
+    <link rel="stylesheet" href="/assets/components/navbar.css" />
+
     <style>
       body {
         margin: 0px;
         overflow: hidden;
-      }
-
-      div {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        height: 100%;
-        width: 100%;
-        margin: 0px;
-        background: radial-gradient(circle, #240015 0%, #12000b 100%);
-        overflow: hidden;
+        background: radial-gradient(circle, #5a3300 0%, #140700 100%);
       }
 
       .wrap {
@@ -27,18 +29,18 @@
         transform: translate(-50%, -50%);
       }
 
-      h2 {
+      #notfound-text {
         position: absolute;
         top: 35%;
         left: 50%;
         margin-top: 150px;
+        font-family: Unbounded, sans-serif;
         font-size: 32px;
+        font-weight: 600;
         text-transform: uppercase;
         transform: translate(-50%, -50%);
         display: block;
         color: #12000a;
-        font-weight: 300;
-        font-family: Audiowide;
         text-shadow: 0px 0px 4px #12000a;
         animation:
           fadeInText 3s ease-in 3.5s forwards,
@@ -297,7 +299,12 @@
     </style>
   </head>
   <body>
-    <div></div>
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch("/assets/components/navbar.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("navbar-placeholder").innerHTML = data; });
+    </script>
     <svg
       id="svgWrap_2"
       xmlns="http://www.w3.org/2000/svg"
@@ -358,6 +365,6 @@
         </filter>
       </defs>
     </svg>
-    <h2>Page Not Found</h2>
+    <h2 id="notfound-text" class="unselectable">Page Not Found</h2>
   </body>
 </html>
